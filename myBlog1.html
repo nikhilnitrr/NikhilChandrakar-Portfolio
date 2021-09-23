@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Array vs Object in JavaScript</title>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navigation container">
+      <div class="nav-brand">I AM NIKHIL CHANDRAKAR</div>
+      <ul class="list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="/">Home</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/projects.html">Projects</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link link-active" href="/blogs.html">Blogs</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <img class="hero-image" src="images/hero-image.svg" />
+      <h1 class="hero-heading">Array v/s Object in JavaScript</h1>
+    </header>
+
+    <section class="section ow">
+      <div class="container container-center">
+      <h1>Array</h1>
+        <p>
+          <strong>In simple terms</strong> , array can be defined as a collection of elements
+          or list of items.<br /><br />
+          <strong>Like</strong> : A collection of numbers [1,2,3,4] , collection of cars
+          ["Alto" , "Audi" , "Mahindra"] etc. <br /><br />
+          <strong>Arrays</strong> in JavaScript comes with bundle of methods and properties such as:
+          <ul>
+          <li>length</li>
+          <li>push</li>
+          <li>pop</li>
+          <li>shift</li>
+          <li>unshift</li>
+          <li>concat</li>
+          <li>includes</li>
+          <li>indexOf</li>
+          <li>reverse</li>
+          <li>sort</li>
+          </ul>
+          <strong>and many more.....</strong>
+          <br>
+          <br>
+
+          <h3>Let us discuss in detail about the above methods and properties :</h3>
+
+          <ol>
+          <li><strong>length :</strong> Like string , array in JavaScript have length property
+          <br>For example<br>var colors = ['red' , 'orange' , 'green']<br>console.log(colors.length) will give us 3 because 
+          there are three elements in colors array </li>
+
+          <br><br>
+
+          <li><strong>push :</strong> push is a method in JavaScript which is used to insert new value at it's end
+          <br>For example<br>var colors = ['red' , 'orange' , 'green']<br>colors.push('pink')  will make colors 
+          array ['red' , 'orange' , 'green' , 'pink'] </li>
+
+          <br><br>
+
+          <li><strong>pop :</strong>pop is a method which is used to remove value from the end of the array
+          <br>For example<br>var colors = ['red' , 'orange' , 'green' , 'pink']<br>colors.pop() will make colors array
+           ['red' , 'orange' , 'green'] </li>
+
+          <br><br>
+
+           <li><strong>shift :</strong>This method  is used to remove value from the front of the array
+          <br>For example<br>var colors = ['red' , 'orange' , 'green' , 'pink']<br>colors.shift() will make colors array
+           ['orange' , 'green' , 'pink'] </li>
+
+           <br><br>
+
+           <li><strong>unshift :</strong>This method is used to insert new value at the front of the array
+          <br>For example<br>var colors = ['red' , 'orange' , 'green' , 'pink']<br>colors.unshift('yellow') will make colors array
+           ['yellow' , 'red' , 'orange' , 'green' , 'pink'] </li>
+
+           <br><br>
+
+           <li><strong>concat :</strong>concat is a method which is used to join arrays
+          <br>For example<br>var cats = ['blue' , 'witty'] <br> var dogs = ['rusty' , 'wyatt']<br>cats.concat(dogs) will give us
+          ['blue' , 'witty' , 'rusty' , 'wyatt'] . However , the original arrays i.e cats and dogs array will remain unchanged </li>
+
+            <br><br>
+
+           <li><strong>includes :</strong>This method is used to check whether a given array contains a particular value or
+           not 
+          <br>For example<br>var colors = ['red' , 'orange' , 'green' , 'pink']<br>colors.includes('red') will return true 
+          because colors array contains 'red' </li>
+
+          <br><br>
+
+           <li><strong>indexOf :</strong>This method returns the index of first occurrence of particular value in the array
+          <br>For example<br>var colors = ['red' , 'orange' , 'green' , 'pink']<br>colors.indexOf('green') will return
+          2 , the important thing to note here is array in JavaScript has 0-based indexing</li>
+
+           <br><br>
+
+           <li><strong>reverse :</strong>This method is used to reverse the array
+          <br>For example<br>var colors = ['red' , 'orange' , 'green' , 'pink']<br>colors.reverse() will make colors array
+           ['pink' , 'green' , 'orange' , 'red'] </li>
+
+           <br><br>
+
+           <li><strong>sort :</strong>sort method is used to sort the array , it is not necessary that the array will be 
+           sorted in ascending or descending order because sorting in JavaScript is done on the basis of UTF codes.</li>
+
+           <br><br>
+
+          </ol>
+
+          <br><br>
+
+        </p>
+        <h1>Object</h1>
+        <p>
+
+          <strong>JavaScript</strong> objects are collection of properties , consider it as a real world entity
+          <br><br>
+          <strong>Properties</strong> are key-value pairs , <em>if you are from Python background 
+          then you can relate objects to dictionary in python</em> <br><br>
+
+          <br>
+
+          eg: var fitBitData = { <br>
+             totalSteps:30,<br>
+             totalMiles:27<br>
+          };<br><br>
+
+          <strong>Accessing</strong> object properties in JavaScript:
+          The properties of an object can be accessed in either of the following ways:<br>
+          <ol>
+          <li>fitBitData.totalMiles</li>
+          <li>fitBitData[ "totalMiles" ]</li>
+          </ol>
+          <br><br>
+          <strong>Here are some of the important things that you should know about objects in JavaScript:</strong>
+          <ul>
+          <li>Internally, all the keys are stored as a string , so you can define key 
+          of an object as a number also apart from string.</li><br>
+          <li>We can also change the value associated with a key , e.g : fitBitData.totalSteps=100</li>
+          <br>
+          <li>Object in JavaScript , unlike arrays and string is not iterable.</li>
+          <br>
+          <li>Object.keys(objectName) returns array of all keys of objectName</li>
+          <br>
+          <li>Object.values(objectName) returns array of all values of objectName</li>
+          <br>
+          </ul>
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-heading">Online Presence</div>
+      <ul class="list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/nikhilnitrr">GitHub</a>
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/nikhil-chandrakar-573419155/"
+            >Linkedin</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://instagram.com/itz.nikhil.chandrakar"
+            >Instagram</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
