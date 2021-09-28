@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-
 /* CSS Variable */
 
 :root {
@@ -27,6 +26,12 @@ hr {
 .container-center {
   max-width: 600px;
   margin: auto;
+}
+
+small {
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 /* links */
@@ -70,7 +75,9 @@ hr {
   background-color: var(--primary-color);
   color: black;
   padding: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-bottom-left-radius: 2rem;
+  width: 80%;
+  margin: auto;
 }
 
 .navigation .nav-brand {
@@ -111,10 +118,18 @@ hr {
 
 .section {
   padding: 2rem;
+  width: 60%;
+  margin: auto;
+  border-radius: 1rem;
 }
 
 .section h1 {
   text-align: center;
+}
+
+.section small {
+  display: block;
+  margin: auto;
 }
 
 .ow {
@@ -127,8 +142,11 @@ hr {
   background-color: var(--primary-color);
   text-align: center;
   padding: 2rem;
-  border-bottom-right-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
   padding-inline-start: 0px;
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
 }
 
 .footer .link {
