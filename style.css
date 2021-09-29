@@ -136,6 +136,10 @@ small {
   background-color: var(--off-white);
 }
 
+.intro span {
+  font-weight: bold;
+}
+
 /* footer */
 
 .footer {
